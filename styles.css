@@ -250,14 +250,34 @@ body {
 }
 
 a {
-  color: var(--color-black);
+  color: inherit;
   text-decoration: none;
+}
+
+.button:hover {
+  background: var(--color-grey);
+}
+
+.fill_big_button {
+  padding-inline: 93px;
+  padding-block: 15px;
+  margin-left: 10px;
+  border: none;
+  width: 228px;
+  height: 49px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.2;
+}
+
+.subName {
+  color: var(--color-grey);
 }
 
 .left_aside {
@@ -275,27 +295,52 @@ h1, h2, h3, h4, h5, h6 {
 
 .left_aside-header-logo {
   color: var(--color-blue);
+  /*color: var(--color-blue);*/
 }
 
-.left_aside-menu-link.is-current {
+.left_aside-menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.left_aside-menu-item.is-current {
   color: var(--color-blue);
+}
+
+.left_aside-menu-icon {
+  margin-inline: 20px;
 }
 
 .left_aside-menu-link:not(.is-current):hover {
   color: var(--color-grey);
 }
 
-.left_aside-menu-link.home::before {
-  content: "";
-  display: inline-block;
-  height: 25px;
-  aspect-ratio: 1;
-  background: url("./icons/home.svg") center center/contain no-repeat;
-  align-self: center;
+.left_aside-menu-button {
+  margin-top: 15px;
 }
 
 .left_aside-mini_profile {
+  display: grid;
+  grid-template-columns: 39px auto 33px;
   align-self: end;
+  align-items: center;
+}
+
+.left_aside_mini_profile-name_subName {
+  display: grid;
+  grid-template-rows: 19px 19px;
+  margin-left: 10px;
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+.left_aside_mini_profile-button {
+  position: relative;
+  background: transparent;
+  border: none;
+  width: 33px;
+  aspect-ratio: 1;
+  margin-bottom: 23px;
 }
 
 
