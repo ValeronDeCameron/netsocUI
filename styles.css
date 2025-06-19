@@ -254,6 +254,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: default;
+}
+
 .button:hover {
   background: var(--color-grey);
 }
@@ -311,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-inline: 20px;
 }
 
-.left_aside-menu-link:not(.is-current):hover {
+.left_aside-menu-item:not(.is-current):hover {
   color: var(--color-grey);
 }
 
