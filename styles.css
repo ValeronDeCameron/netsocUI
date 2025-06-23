@@ -229,6 +229,7 @@ svg * {
   --color-grey: #5B7083;
   --color-white: #FFFFFF;
   --color-light-grey: #EBEEF0;
+  --color-red: #F4245E;
 
   --border-radius: 99px;
   --border: 1px solid var(--color-blue);
@@ -265,7 +266,7 @@ button {
 
 .button:hover {
   background: var(--color-grey);
-  transition-duration: 3s;
+  transition-duration: 0.2s;
 }
 
 .fill_big_button {
@@ -439,6 +440,93 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 50px 510px;
   gap: 10px;
   padding: 10px 15px;
-
 }
+
+.posts-post-main_post {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+}
+
+.posts-post-main_post-name_subname {
+  position: relative;
+  display: flex;
+  column-gap: 4px;
+}
+
+.post-subName {
+  color: var(--color-grey);
+}
+
+.post-divider {
+  position: relative;
+  top: -3px;
+  align-self: center;
+  color: var(--color-grey);
+}
+
+.post-time {
+  color: var(--color-grey);
+}
+
+.posts-post-main_post-content {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.posts-post-main_post-image {
+  border-radius: 16px;
+}
+
+.posts-post-main_post-statistic {
+  width: 510px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  padding-right: 86px;
+}
+
+.statistic-comment {
+  align-items: center;
+}
+
+/*.statistic-comment::before {*/
+/*  margin-right: 10px;*/
+/*  vertical-align: middle;*/
+/*  content: '';*/
+/*  display: inline-block;*/
+/*  width: 18px;*/
+/*  aspect-ratio: 1;*/
+/*  background: url("./icons/comment.svg") center / contain no-repeat;*/
+/*}*/
+.posts-post-main_post-statistic {
+  margin-block: 14px;
+  color: var(--color-grey);
+}
+
+.statistic-comment {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+.statistic-retweet {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}.statistic-like {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  color: var(--color-red);
+}
+
+ .statistic-share {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 10px;
+ }
+
+ .posts-post-main_post-more {
+   color: var(--color-blue);
+ }
+
 
