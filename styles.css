@@ -531,13 +531,10 @@ h1, h2, h3, h4, h5, h6 {
    grid-template-rows: 40px 458px 234px 38px ;
    padding-top: 10px;
    padding-bottom: 74px;
+   row-gap: 15px;
  }
 
- .right_aside-form_search {
-
- }
-
- .search_label {
+ .right_aside-form_search-search_label {
    position: relative;
  }
 
@@ -547,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
    gap: 15px;
  }
 
- .form_search-search_input {
+ .right_aside-form_search-search_input {
    background-color: var(--color-light-grey);
    align-self: center;
    border-radius: var(--border-radius);
@@ -557,12 +554,12 @@ h1, h2, h3, h4, h5, h6 {
    padding-block: 10px;
  }
 
- .form_search-search_input:focus {
+ .right_aside-form_search-search_input:focus {
    outline: none;
    border: 2px solid var(--color-grey);
  }
 
- .search_icon {
+ .right_aside-form_search-search_icon {
    width: 17px;
    height: 17px;
    color: var(--color-grey);
@@ -571,5 +568,36 @@ h1, h2, h3, h4, h5, h6 {
    top: 50%;
    transform: translate(-50%, -50%);
  }
+
+ .container {
+   /*width: 350px;*/
+   /*height: 458px;*/
+   padding-inline: 15px;
+   padding-top: 12px;
+   padding-bottom: 15px;
+   background-color: var(--color-light-grey);
+   border-radius: 16px;
+ }
+
+ .right_aside-news-header h2 {
+   margin-top: 0;
+   margin-bottom: 10px;
+ }
+
+ .right_aside-block {
+   display: flex;
+   column-gap: 15px;
+   align-items: center;
+ }
+
+ .right_aside-block-img {
+   display: block; /* прибирає пробіли під зображенням */
+   width: auto;
+   height: auto;
+   max-width: none;
+   max-height: none;
+ }
+
+
 
 
