@@ -224,6 +224,7 @@ svg * {
 }
 
 :root {
+  --color-super-light-grey: #F7F9FA;
   --color-blue: #1DA1F2;
   --color-black: #0F1419;
   --color-grey: #5B7083;
@@ -473,6 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .posts-post-main_post-content {
+  font-weight: bold;
   margin-top: 4px;
   margin-bottom: 10px;
 }
@@ -524,11 +526,13 @@ h1, h2, h3, h4, h5, h6 {
  }
 
  .right_aside {
-   position: sticky;
-   top: 0;
-   max-height: 100vh;
+   /*position: sticky;*/
+   /*top: 0;*/
+   /*max-height: 100vh;*/
+   align-self: start;
    display: grid;
-   grid-template-rows: 40px 458px 234px 38px ;
+   /*grid-template-rows: 40px 458px 234px 38px ;*/
+   grid-template-rows: auto;
    padding-top: 10px;
    padding-bottom: 74px;
    row-gap: 15px;
@@ -575,28 +579,77 @@ h1, h2, h3, h4, h5, h6 {
    padding-inline: 15px;
    padding-top: 12px;
    padding-bottom: 15px;
-   background-color: var(--color-light-grey);
+   background-color: var(--color-super-light-grey);
    border-radius: 16px;
+   position: relative;
+ }
+
+ .right_aside-news-header {
+   padding-bottom: 12px;
+   /*padding-inline: 15px;*/
+   /*border-bottom: 2px solid var(--color-light-grey);*/
  }
 
  .right_aside-news-header h2 {
-   margin-top: 0;
-   margin-bottom: 10px;
+   margin: 0;
+ }
+
+ .right_aside-blocks {
+   border-block: 1px solid var(--color-light-grey);
  }
 
  .right_aside-block {
    display: flex;
    column-gap: 15px;
+   /*padding-inline: 15px;*/
+   padding-block: 10px;
    align-items: center;
  }
 
+ .right_aside-block-header {
+   margin-bottom: 6px;
+   color: var(--color-grey);
+   font-size: 14px;
+ }
+
+ .right_aside-block-content {
+   margin-bottom: 6px;
+ }
+
+ .trending_with {
+   color: var(--color-grey);
+   margin-right: 6px;
+ }
+
+ .tag {
+   color: var(--color-blue);
+ }
+
  .right_aside-block-img {
-   display: block; /* прибирає пробіли під зображенням */
+   display: block;
    width: auto;
    height: auto;
    max-width: none;
    max-height: none;
  }
+
+ .right_aside-block-tags {
+   margin-top: 6px;
+ }
+
+ .show {
+   padding-top: 15px;;
+ }
+
+ .showMore h2 {
+   padding: 0;
+   margin: 0;
+ }
+
+ .right_aside-suggestion-header h2{
+   margin: 0;
+ }
+
 
 
 
